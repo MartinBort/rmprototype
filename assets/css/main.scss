@@ -1,0 +1,20 @@
+//sass --watch main.scss:build/style.css
+
+//debug grid
+/*
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+*/
+
+//imports
+@import 'libs/normalize';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+@import 'hero-banner';
+@import 'display-properties';
+@import 'filter-options';
+
+//removed gutter in neat/settings/_grid.scss

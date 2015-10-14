@@ -1,0 +1,5 @@
+#2ECC71 - emerald (green)
+
+#34495E - wet asphalt (navy)
+
+font - Raleway

@@ -1,0 +1,94 @@
+{
+    "properties": [{
+            "pId": "001",
+            "pTitle": "4 bedroom terraced house for sale",
+            "pType": 1,
+            "listingType": "For sale",
+            "price": "800000",
+            "bedrooms": 4,
+            "address": {
+                "street": "Jerningham Road",
+                "pLocation": "New Cross",
+                "postcode": "SE14 2MG"
+            },
+            "added": {
+                "day": "03",
+                "month": "December",
+                "year": "2014"
+            },
+            "img": "prop1/prop1.jpg",
+            "imgsmall": "prop1/prop1small.jpg",
+            "info": "Four bedroom Victorian house arranged over three floors opposite the park. Situated on one of Telegraph Hill's most desirable roads this property offers versatile accommodation with absolutely outstanding views of London. In addition there is a modern kitchen/dining room leading on to the landscaped garden, a large utility room which could be converted into a further bedroom. New Cross Gate BR station will whisk you to London Bridge in approx. 7 minutes and Overground. Offered end of chain",
+            "pHref": "001"
+        },
+
+        {
+            "pId": "002",
+            "pTitle": "2 bedroom top floor flat",
+            "pType": 2,
+            "listingType": "For sale",
+            "price": "700000",
+            "bedrooms": 2,
+            "address": {
+                "street": "Arbuthnot Road",
+                "pLocation": "New Cross",
+                "postcode": "SE14 1XS"
+            },
+            "added": {
+                "day": "03",
+                "month": "December",
+                "year": "2014"
+            },
+            "img": "prop2/prop2.jpg",
+            "imgsmall": "prop1/prop1small.jpg",
+            "info": "",
+            "pHref": "001"
+        },
+
+        {
+            "pId": "003",
+            "pTitle": "3 bed house with garden",
+            "pType": 1,
+            "listingType": "For sale",
+            "price": "850000",
+            "bedrooms": 3,
+            "address": {
+                "street": "Green Lane",
+                "pLocation": "New Cross",
+                "postcode": "SE14 4MG"
+            },
+            "added": {
+                "day": "03",
+                "month": "December",
+                "year": "2014"
+            },
+            "img": "prop3/prop3.jpg",
+            "imgsmall": "prop1/prop1small.jpg",
+            "info": "",
+            "pHref": "001"
+        },
+
+        {
+            "pId":"004",
+            "pTitle":"Studio flat",
+            "pType":2,
+            "listingType":"For sale",
+            "price":"400000",
+            "bedrooms": 0,
+            "address": {
+                "street":"Pepys Road",
+                "pLocation":"New Cross",
+                "postcode":"SE14 7TN"
+            },
+            "added": {
+                "day":"03",
+                "month":"December",
+                "year":"2014"
+            },
+            "img":"prop4/prop4.jpg",
+            "imgsmall":"prop1/prop1small.jpg",
+            "info":"",
+            "pHref":"001"
+        }
+    ]
+}
