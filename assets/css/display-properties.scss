@@ -1,80 +1,69 @@
 body {
-	background: #F4F3F0;
+    background: #F4F3F0;
 }
 
 #results {
-	@include fill-parent();
-	background: #FFF;
-	margin-top: 10px;
+    @include fill-parent();
+    background: #FFF;
+    margin-top: 10px;
 }
 
 .result {
-	@include span-columns(6);
-	@include omega(2n);
+    @include span-columns(6);
+    @include omega(2n);
+    margin-top: 15px;
+    padding: 10px;
+    i {
+        color: $txtColor2;
+    }
+}
 
-	margin-top: 15px;
-	padding: 10px;
-
-	.img-wrap {
-		width: 100%;
-
-		img {
-			width: 100%;
-			max-height: 330px;
-		}
-
-		p {
-			position: absolute;
-			margin: 0px 0px 0px 20px;
-			padding: 20px 5px 10px 5px;
-			color: #FFF;
-			background-color: $transparent-navy;
-		}
-	}
-
-	i {
-		color: $txtColor2;
-	}
-
+.img-wrap {
+    width: 100%;
+    img {
+        width: 100%;
+        max-height: 330px;
+    }
+    p {
+        position: absolute;
+        margin: 0px 0px 0px 20px;
+        padding: 20px 5px 10px 5px;
+        color: #FFF;
+        background-color: $transparent-navy;
+    }
 }
 
 .result:hover {
-	background: $result-highlight;
+    background: $result-highlight;
 }
-
 
 //mobile
 @media (max-width: 900px) {
-	body {
-		background: #FFF
-	}
-
-	#results {
-		@include fill-parent();
-		margin-top: 0;
-	}
-
-  	.result {
-		@include span-columns(12);
-		margin-top: 0px;
-		&:nth-of-type(2n) {
-			background: rgba(222,222,222,0.5);
-		}
-	}
-
-	.results-filters-wrap {
-		position: relative;
-		top: 150px;
-	}
-
-}//end @media
-
+    body {
+        background: #FFF
+    }
+    #results {
+        @include fill-parent();
+        margin-top: 0;
+    }
+    .result {
+        @include span-columns(12);
+        margin-top: 0px;
+        &:nth-of-type(2n) {
+            background: rgba(222, 222, 222, 0.5);
+        }
+    }
+    .results-filters-wrap {
+        position: relative;
+        top: 150px;
+    }
+} //end @media
 @media (max-width: 400px) {
-	.results-filters-wrap {
-		top: 110px;
-		margin-top: 0px;
-		.result {
-			margin-top: 0px;
-		}
-	}
+    .results-filters-wrap {
+        top: 110px;
+        margin-top: 0px;
+    }
+    .result {
+        margin-top: 0px;
+    }
 }

@@ -1,33 +1,37 @@
 .results-filters-wrap {
     @include outer-container(1000px);
-    .property-filters {
-        @include fill-parent();
-        //border-bottom: 1px solid $outline-color;
-        .filter {
-            @include span-columns(6);
-            padding: 20px 0px 10px 0px;
-            p {
-                @include span-columns(2 of 6);
-                text-align: right;
-                padding-right: 30px;
-            }
-            >div {
-                @include span-columns(4 of 6);
-                padding-top: 15px;
-            }
-        }
+}
+
+.property-filters {
+    @include fill-parent();
+    //border-bottom: 1px solid $outline-color;
+}
+
+.filter {
+    @include span-columns(6);
+    @include omega(2n);
+    padding: 20px 0px 25px 10px;
+    p {
+        @include span-columns(2 of 6);
+        text-align: right;
+        padding-right: 30px;
     }
-    .select-wrap {
-        position: relative;
-        display: inline-block;
-        border: 1px solid $outline-color;
-        padding: 5px 0px 5px 0px;
-        bottom: 7px;
-        select {
-            border: 0;
-            border-radius: 0;
-            background: transparent;
-        }
+    >div {
+        @include span-columns(4 of 6);
+        padding-top: 15px;
+    }
+}
+
+.select-wrap {
+    position: relative;
+    display: inline-block;
+    border: 1px solid $outline-color;
+    padding: 5px 0px 5px 0px;
+    bottom: 7px;
+    select {
+        border: 0;
+        border-radius: 0;
+        background: transparent;
     }
 }
 
@@ -56,17 +60,14 @@
             background: $green;
         }
     }
-
     .results-filters-wrap {
-    @include outer-container(1000px);
+        @include outer-container(1000px);
+    }
     .property-filters {
         @include fill-parent();
         border-bottom: 1px solid $outline-color;
-        .filter {
-            @include fill-parent();
-        }
     }
-}
-    
-    
+    .filter {
+        @include fill-parent();
+    }
 }

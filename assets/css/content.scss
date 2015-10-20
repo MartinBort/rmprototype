@@ -1,0 +1,23 @@
+.sidekick-wrapper {
+	@include outer-container(1000px);
+	margin-top: 20px;
+}
+
+.sidekick {
+	@include span-columns(4 of 12);
+	height: 400px;
+	border: 1px solid $outline-color;
+	img {
+		width: 100%;
+	}
+	div {
+		padding: 5px;
+	}
+}
+
+@media (max-width: 900px) {
+	.sidekick {
+		@include span-columns(12 of 12);
+		height: 200px;
+	}
+}
