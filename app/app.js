@@ -33,7 +33,24 @@
             
         };
 
+        var openMenu = function() {
+            console.log($scope.showMobileMenu);
+            $scope.showMobileMenu = true;
+            console.log($scope.showMobileMenu);
+            /*var menu = document.getElementById("mobileMenu");
+            menu.className = "show-mobile-menu";*/
+        };
 
+        /*var closeMobileMenu = function() {
+            console.log('hide');
+            var menu = document.getElementById("mobileMenu");
+            menu.className = "hide";
+        };*/
+
+        //$scope.closeMobileMenu = closeMobileMenu;
+        //$scope.showMobileMenu = showMobileMenu;
+        $scope.showMobileMenu = false;
+        $scope.openMenu = openMenu;
         $scope.propertyFilters = propertyFilters;
     	$scope.submitSearch = getProperties;
     	$scope.results = [];
